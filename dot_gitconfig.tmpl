@@ -1,13 +1,7 @@
 [user]
-{{- if eq .context "work" }}
-  name = Trevor Lauder
-  email = trevor.l@getjobber.com
-  signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBSUVAIeDzcblOEpMsc/j99JM84OcqLoRqMlkM4V/xV+
-{{- else }}
-  name = Trevor Lauder
-  email = me@trevorlauder.dev
-  signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ8Kxf3xBGGiw6nvswyyCTfSd57cezaY25v72wGadcrA
-{{- end }}
+  name = Mauricio Vargas
+  email = mauricio.v@getjobber.com
+  signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDr7MsXja2HU/8zOyYDtrg23mjd6YN8lLsZYqrZjweaL
 
 [fetch]
   prune = true
@@ -19,7 +13,7 @@
   format = ssh
 
 [gpg "ssh"]
-  allowedSignersFile = /Users/tlauder/.ssh/allowed_signers
+  allowedSignersFile = {{ .chezmoi.homeDir }}/.ssh/allowed_signers
   defaultKeyCommand = ssh-add -L
 
 [filter "lfs"]

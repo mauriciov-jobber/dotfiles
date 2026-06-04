@@ -11,7 +11,7 @@ mise trust ~/.dotfiles
 
 mise use -p ${HOME}/.config/mise/conf.d/000-bootstrap.toml chezmoi
 
-mise exec -- chezmoi init https://github.com/trevorlauder/dotfiles
+mise exec -- chezmoi init https://github.com/mauriciov-jobber/dotfiles
 mise exec -- chezmoi apply
 
 rm -f ${HOME}/.config/mise/conf.d/000-bootstrap.toml
